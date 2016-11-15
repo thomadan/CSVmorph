@@ -1,5 +1,5 @@
 # CSVmorph
-Read CSV files dynamically in Max's audio engine
+Read and process CSV files dynamically in Max's audio engine
 
 The core code for this project is written in Java, with additional code in JavaScript.
 Max is hosting the Java and JavaScript code through its APIs, and is used for graphical interface and audio engine.
