@@ -1,6 +1,7 @@
 # CSVmorph
 
-This project is a [Max](https://cycling74.com/products/max/) patch reading and processing CSV files dynamically at audio signal rate.
+This project is a [Max](https://cycling74.com/products/max/) patch reading and processing CSV files dynamically at audio signal rate. [The project web page](http://thomasdahlandersen.net/). A demonstration video is available [here](http://thomasdahlandersen.net/)
+
 
 ![CSVmorph interface](http://thomasdahlandersen.net/images/CSVmorph%20interface%20v2.png)
 
