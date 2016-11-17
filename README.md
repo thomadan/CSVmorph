@@ -5,7 +5,7 @@ This project is a [Max](https://cycling74.com/products/max/) patch for processin
 
 ![CSVmorph interface](http://thomasdahlandersen.net/images/CSVmorph%20interface.png)
 
-*The graphical interface is shown above.*
+*The graphical interface is shown above, with the CSV file data represented as a graph.*
 
 The core code for this project is written in Java, with additional code in JavaScript. Max is hosting the Java and JavaScript code through its APIs, and is used for its graphical interface and audio engine.
 
