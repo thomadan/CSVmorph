@@ -3,7 +3,7 @@
 This project is a [Max](https://cycling74.com/products/max/) patch reading and processing CSV files dynamically at audio signal rate. A key feature is having multiple instances of the patch effect each other.
 
 
-![CSVmorph interface]()
+![CSVmorph interface](http://thomasdahlandersen.net/images/CSVmorph%20interface.png)
 
 *The graphical interface as it presents in Max is shown above, with the data of a CSV file represented as a run chart.*
 
