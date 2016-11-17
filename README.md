@@ -5,7 +5,7 @@ This project is a Max patch for processing CSV files dynamically at audio signal
 
 ![CSVmorph interface](http://thomasdahlandersen.net/images/CSVmorph%20interface.png)
 
-**The graphical interface is shown above.**
+*The graphical interface is shown above.*
 
 The core code for this project is written in Java, with additional code in JavaScript. Max is hosting the Java and JavaScript code through its APIs, and is used for its graphical interface and audio engine.
 
