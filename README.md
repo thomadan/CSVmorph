@@ -21,5 +21,5 @@ The core code for this project is written in Java, with additional code in JavaS
 
 
 ### Running it
-The patch runs on Max version 7. Java version 6 or later is required. Since both Max and Java are available in both 32- and 64-bit architecture, one should make sure that the installed Java version is of the same bit architecture as that of the Max executable. Both Mac OS and Windows operating systems are supported.
+The patch runs on Max version 7. Java version 6 or later is required, as well as the [Commons Math](http://commons.apache.org/proper/commons-math/index.html) library. Since both Max and Java are available in both 32- and 64-bit architecture, one should make sure that the installed Java version is of the same bit architecture as that of the Max executable. Both Mac OS and Windows operating systems are supported.
 
