@@ -1,6 +1,6 @@
 # CSVmorph
 
-This project is a Max patch for processing CSV files dynamically at audio signal rate.
+This project is a [Max](https://cycling74.com/products/max/) patch for processing CSV files dynamically at audio signal rate.
 
 
 ![CSVmorph interface](http://thomasdahlandersen.net/images/CSVmorph%20interface.png)
@@ -22,5 +22,5 @@ This site was built using [GitHub Pages](https://pages.github.com/).
 
 
 ### Running it
-The patch runs on [Max](https://cycling74.com/products/max/) version 7. Java version 6 or later is required. Since both Max and Java are available in both 32- and 64-bit architecture, one should make sure that the installed Java version is of the same bit architecture as that of the Max executable. Both Mac OS and Windows operating systems are supported.
+The patch runs on Max version 7. Java version 6 or later is required. Since both Max and Java are available in both 32- and 64-bit architecture, one should make sure that the installed Java version is of the same bit architecture as that of the Max executable. Both Mac OS and Windows operating systems are supported.
 
