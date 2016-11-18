@@ -16,7 +16,7 @@ The core code for this project is written in Java, with additional code in JavaS
 
 ### The files
 
-* CSVmorph.maxpat - The bpatcher to be used in Max patchers
+* CSVmorp.maxpat - The bpatcher to be used in Max patchers
 * CSVmorph.java   - the core Java class, processing and drawing commands
 * CSVmorph.class  - a compiled version of the java source
 * CSVmorph.js     - JavaScript code for resizing bpatcher
