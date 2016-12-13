@@ -1,6 +1,8 @@
 # CSVmorph
 
-This project is a [Max](https://cycling74.com/products/max/) patch reading and processing CSV files dynamically at audio signal rate. [The project web page](http://thomasdahlandersen.net/CSVmorph). A demonstration video is available [here](https://www.youtube.com/watch?v=ChBopj9Q4lQ)
+This project is a [Max](https://cycling74.com/products/max/) patch reading and processing CSV files dynamically at audio signal rate.
+
+A demonstration video is available [here](https://www.youtube.com/watch?v=ChBopj9Q4lQ)
 
 ![CSVmorph interface](http://thomasdahlandersen.net/images/CSVmorph%20interface%20v2.png)
 
@@ -23,11 +25,11 @@ The core code for this project is written in Java, with additional code in JavaS
 
 The CSVmorph patch is meant to be run as a bpatcher in a parent patcher, and not by itself. This is done by pressing [N] on the keyboard in a patcher and typing [bpatcher CSVmorph.maxpat].
 
-## Operating the patch
+### Operating the patch
 
 Upon creation, the patch is in its minimized state. Clicking the patch will maximize it, showing the graphical representation and various controls. Additional controls are available by clicking the 'Settings' button on the lower right.
 
-## The controls
+### The controls
 
 * Column - choose a column from the CSV file
 * Low-pass - low-pass filter the data
@@ -37,7 +39,7 @@ Upon creation, the patch is in its minimized state. Clicking the patch will maxi
 * Rotate - rotate column along its horizontal axis
 * Bend - bend column along its horizontal axis
 
-# Settings
+### Settings
 
 * Lo limit - 
 * Hi limit - 
@@ -45,7 +47,7 @@ Upon creation, the patch is in its minimized state. Clicking the patch will maxi
 * Load CSV file
 
 
-## Requirements
+### Requirements
 
 * Windows or macOS operating system
 * Max version 7
