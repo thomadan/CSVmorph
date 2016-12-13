@@ -9,7 +9,7 @@ A demonstration video is available [here](https://www.youtube.com/watch?v=ChBopj
 *The graphical interface as it presents in Max is shown above, with a column of values from a CSV file represented graphically.*
 
 The core code for this project is written in Java, with additional code in JavaScript. Max is hosting the Java and JavaScript code through its APIs, and is used primarily for its graphical interface and audio engine.
-
+------
 
 ### The files
 
