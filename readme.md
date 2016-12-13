@@ -10,7 +10,7 @@ A demonstration video is available [here](https://www.youtube.com/watch?v=ChBopj
 
 The core code for this project is written in Java, with additional code in JavaScript. Max is hosting the Java and JavaScript code through its APIs, and is used primarily for its graphical interface and audio engine.
 
-## The files
+### The files
 
 * CSVmorph.maxpat - The patcher, to be used in Max as a *bpatcher*
 * CSVmorph.java   - The core Java class. Performing reading, processing and drawing commands.
