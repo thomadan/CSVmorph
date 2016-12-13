@@ -10,12 +10,6 @@ A demonstration video is available [here](https://www.youtube.com/watch?v=ChBopj
 
 The core code for this project is written in Java, with additional code in JavaScript. Max is hosting the Java and JavaScript code through its APIs, and is used primarily for its graphical interface and audio engine.
 
----
-
-___
-
-***
-
 ### The files
 
 * CSVmorph.maxpat - The patcher, to be used in Max as a *bpatcher*
@@ -24,7 +18,6 @@ ___
 * CSVmorph.js     - JavaScript code for resizing bpatcher
 * hailun.csv      - Included default CSV file
 * example.maxpat  - An example patch demonstrating how CSVmorph.maxpat is used
-
 
 ### Running the patch
 
@@ -51,7 +44,6 @@ Upon creation, the patch is in its minimized state. Clicking the patch will maxi
 * Invert
 * Load CSV file
 
-
 ### Requirements
 
 * Windows or macOS operating system
@@ -61,5 +53,3 @@ Upon creation, the patch is in its minimized state. Clicking the patch will maxi
 * Max and Java versions should be of the same bit architecture (e.g. both are 64-bit)
 
 The patch is developed for Max version 7. Java version 6 or later is required, as well as the [Commons Math](http://commons.apache.org/proper/commons-math/index.html) library. Since both Max and Java are available in both 32- and 64-bit architecture, one should make sure that the installed Java version is of the same bit architecture as that of the chosen Max version. Both Mac OS and Windows operating systems are supported.
-
-
