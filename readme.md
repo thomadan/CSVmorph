@@ -6,7 +6,7 @@ This project is a [Max](https://cycling74.com/products/max/) patch reading and p
 
 *The graphical interface as it presents in Max is shown above, with a column of values from a CSV file represented graphically.*
 
-The core code for this project is written in Java, with additional code in JavaScript. Max is hosting the Java and JavaScript code through its APIs, and is used primarily for its graphical interface and audio engine.
+The core code for this project is written in Java, with additional code in JavaScript. Max is hosting the Java and JavaScript code through its APIs, and is utilized primarily for its graphical interface and audio engine.
 
 ### The files
 
@@ -36,28 +36,26 @@ The patch is developed for Max version 7. Java version 6 or later is required, a
 
 
 
-## Operating the patch
+## Operating CSVmorph
 
-Upon creation, the patch is in its minimized state. Clicking the patch will maximize it, showing the graphical representation and various controls. Additional controls are available by clicking the 'Settings' button on the lower right. The triangle at the top left corner minimizes the patch.
+Upon creation, the bpatcher is in its minimized state. Clicking the bpatcher will maximize it, showing the graphical representation of the data and various controls. Additional controls are available by clicking the 'Settings' button in the lower right. The triangle at the top left corner minimizes the bpatcher.
 
-An orange marker represents the position from which a value is being read from the column of data.This marker can be controlled either with the speed slider or through input from another instance of the CSVmorph patch. The opaque area represents a limitation of the section from which to read values. This area can be set by click-dragging the mouse pointer across the desired area. Modifier keys of shift, control/cmd and alt manipulates the edges of the area in various ways.
+An orange marker represents the position from which a value is being read from the column of data. This marker can be controlled either with the speed slider or through input from another instance of the CSVmorph patch (or any signal input in the range of 0 to 1). The opaque area represents the limits of the section from which to read values. This area can be set by click-dragging the mouse pointer across the desired area. Modifier keys manipulates the edges of the area in various ways. Holding shift, control/cmd or alt while click-dragging the opaque area modifies the individual edges, position and size of the area, respectively.
+
 ### The controls
-
 * Column - Choose a column from the CSV file
-
 * Low-pass - Low-pass filter the data
 * High-pass - High-pass filter the data
 * Scale - Scale values by a factor of 0 to 2
 * Offset - Offset values by an amount of -1 to 1
 * Rotate - Rotate column along its horizontal axis as it presents graphically
 * Bend - Bend column along its horizontal axis as it presents graphically
-
 * Trigger - Set read position to start of read area
 * Speed - Interval of read position advancement in either direction
 * Loop - Loop read area
-### Settings
 
-* Lo limit - Soft clip values as they near 0.
-* Hi limit - Soft clip values as they near 1.
+### Settings
+* Lo limit - Soft clip values as they near 0
+* Hi limit - Soft clip values as they near 1
 * Invert - Reverse the values of the column
 * Load CSV file - Open file dialog for selscting CSV file to load
