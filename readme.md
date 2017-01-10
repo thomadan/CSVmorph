@@ -13,14 +13,13 @@ The core code for this project is written in Java, with additional code in JavaS
 * CSVmorph.maxpat - The CSVmorph Max patch, to be used in Max as a *bpatcher*
 * CSVmorph.java   - Java source code for performing reading, processing and drawing operations
 * CSVmorph.class  - Compiled CSVmorph.java - dependency of CSVmorph.maxpat
-* CSVmorph.js     - JavaScript code for resizing bpatcher - dependency of CSVmorph.maxpat
+* CSVmorph.js     - JavaScript code for resizing bpatcher - dependency of CSVmorph.maxpat
 * hailun.csv      - Included default CSV file
 * example.maxpat  - An example patch demonstrating how CSVmorph.maxpat is used
 
 ## Running the patch
 
-The CSVmorph patch is meant to be run as a bpatcher in a parent patcher, and not by itself. This is done by typing *bpatcher CSVmorph.maxpat* in a new object creation box.
-
+The patch is developed for Max version 7. Java version 6 or later is required, as well as the [Commons Math](http://commons.apache.org/proper/commons-math/index.html) library. Since both Max and Java are available in both 32- and 64-bit architecture, the installed Java version must be of the same bit architecture as that of the chosen Max version. Both Mac OS and Windows operating systems are supported.
 
 ### Requirements
 
@@ -30,13 +29,10 @@ The CSVmorph patch is meant to be run as a bpatcher in a parent patcher, and not
 * The [Commons Math](http://commons.apache.org/proper/commons-math/index.html) Java library
 * Max and Java versions should be of the same bit architecture (e.g. both are 64-bit)
 
-The patch is developed for Max version 7. Java version 6 or later is required, as well as the [Commons Math](http://commons.apache.org/proper/commons-math/index.html) library. Since both Max and Java are available in both 32- and 64-bit architecture, the installed Java version must be of the same bit architecture as that of the chosen Max version. Both Mac OS and Windows operating systems are supported.
+The CSVmorph patch is meant to be run as a bpatcher in a parent patcher, and not by itself. This is done by typing *bpatcher CSVmorph.maxpat* in a new object creation box.
 
 
-
-
-
-## Operating CSVmorph
+### Operating CSVmorph
 
 Upon creation, the bpatcher is in its minimized state. Clicking the bpatcher will maximize it, showing a graphical representation of the data and various controls for reading and processing the data. Additional controls are available by clicking the 'Settings' button in the lower right. The triangle at the top left corner minimizes the bpatcher.
 
