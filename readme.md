@@ -32,7 +32,7 @@ The patch is developed for Max version 7. Java version 6 or later is required, a
 The CSVmorph patch is meant to be run as a bpatcher in a parent patcher, and not by itself. This is done by typing *bpatcher CSVmorph.maxpat* in a new object creation box.
 
 
-### Operating CSVmorph
+## Operating CSVmorph
 
 Upon creation, the bpatcher is in its minimized state. Clicking the bpatcher will maximize it, showing a graphical representation of the data and various controls for reading and processing the data. Additional controls are available by clicking the 'Settings' button in the lower right. The triangle at the top left corner minimizes the bpatcher.
 
