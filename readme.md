@@ -10,16 +10,16 @@ The core code for this project is written in Java, with additional code in JavaS
 
 ### The files
 
-* CSVmorph.maxpat - The patcher, to be used in Max as a *bpatcher*
-* CSVmorph.java   - The core Java class. Performing reading, processing and drawing commands.
-* CSVmorph.class  - Compiled version of the java source code - dependency of CSVmorph.maxpat
+* CSVmorph.maxpat - The CSVmorph Max patch, to be used in Max as a *bpatcher*
+* CSVmorph.java   - Java source code for performing reading, processing and drawing operations
+* CSVmorph.class  - Compiled CSVmorph.java - dependency of CSVmorph.maxpat
 * CSVmorph.js     - JavaScript code for resizing bpatcher - dependency of CSVmorph.maxpat
 * hailun.csv      - Included default CSV file
 * example.maxpat  - An example patch demonstrating how CSVmorph.maxpat is used
 
 ## Running the patch
 
-The CSVmorph patch is meant to be run as a bpatcher in a parent patcher, and not by itself. This is done by pressing the key [n] in a patcher and typing [bpatcher CSVmorph.maxpat].
+The CSVmorph patch is meant to be run as a bpatcher in a parent patcher, and not by itself. This is done by typing *bpatcher CSVmorph.maxpat* in a new object creation box.
 
 
 ### Requirements
@@ -30,7 +30,7 @@ The CSVmorph patch is meant to be run as a bpatcher in a parent patcher, and not
 * The [Commons Math](http://commons.apache.org/proper/commons-math/index.html) Java library
 * Max and Java versions should be of the same bit architecture (e.g. both are 64-bit)
 
-The patch is developed for Max version 7. Java version 6 or later is required, as well as the [Commons Math](http://commons.apache.org/proper/commons-math/index.html) library. Since both Max and Java are available in both 32- and 64-bit architecture, one should make sure that the installed Java version is of the same bit architecture as that of the chosen Max version. Both Mac OS and Windows operating systems are supported.
+The patch is developed for Max version 7. Java version 6 or later is required, as well as the [Commons Math](http://commons.apache.org/proper/commons-math/index.html) library. Since both Max and Java are available in both 32- and 64-bit architecture, the installed Java version must be of the same bit architecture as that of the chosen Max version. Both Mac OS and Windows operating systems are supported.
 
 
 
@@ -38,11 +38,13 @@ The patch is developed for Max version 7. Java version 6 or later is required, a
 
 ## Operating CSVmorph
 
-Upon creation, the bpatcher is in its minimized state. Clicking the bpatcher will maximize it, showing the graphical representation of the data and various controls. Additional controls are available by clicking the 'Settings' button in the lower right. The triangle at the top left corner minimizes the bpatcher.
+Upon creation, the bpatcher is in its minimized state. Clicking the bpatcher will maximize it, showing a graphical representation of the data and various controls for reading and processing the data. Additional controls are available by clicking the 'Settings' button in the lower right. The triangle at the top left corner minimizes the bpatcher.
 
-An orange marker represents the position from which a value is being read from the column of data. This marker can be controlled either with the speed slider or through input from another instance of the CSVmorph patch (or any signal input in the range of 0 to 1). The opaque area represents the limits of the section from which to read values. This area can be set by click-dragging the mouse pointer across the desired area. Modifier keys manipulates the edges of the area in various ways. Holding shift, control/cmd or alt while click-dragging the opaque area modifies the individual edges, position and size of the area, respectively.
+An orange marker represents the position from which a value is being read from the data. The opaque area represents the limits of the section from which to read values. This area can be set by click-dragging the mouse pointer across the desired area. Modifier keys manipulates the edges of the area in various ways. Holding shift, control/cmd or alt while click-dragging the opaque area modifies the individual edges, position and size of the area, respectively.
 
-### The controls
+Most of the controls in CSVmorph can be controlled by external input from another instance of the CSVmorph patch, or by any signal input in the range of 0 to 1.
+
+### Controls
 * Column - Choose a column from the CSV file
 * Low-pass - Low-pass filter the data
 * High-pass - High-pass filter the data
