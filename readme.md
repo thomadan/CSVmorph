@@ -29,7 +29,7 @@ The patch is developed for Max version 7. Java version 6 or later is required, a
 * The [Commons Math](http://commons.apache.org/proper/commons-math/index.html) Java library
 * Max and Java versions should be of the same bit architecture (e.g. both are 64-bit)
 
-The CSVmorph patch is meant to be run as a bpatcher in a parent patcher, and not by itself. This is done by typing *bpatcher CSVmorph.maxpat* in a new object creation box.
+The CSVmorph patch is meant to be run as a bpatcher in a parent patcher, and not by itself. This is done by typing *bpatcher CSVmorph.maxpat* in a new object creation box. The included example patch demonstrates how CSVmorph is used.
 
 
 ## Operating CSVmorph
