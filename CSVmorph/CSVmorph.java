@@ -77,7 +77,7 @@ public class CSVmorph extends MSPPerformer {
     					tanhBottomOn 		= false;		// Soft clip of values approaching 0
 	
     // Default values
-    private int 		columnDefault 		= 1;
+    private int 		columnDefault 		= 0;
     private double 		smoothDefault 		= 0.0,
     			   		hipassDefault 		= 0.0,
     			   		scaleYDefault 		= 0.5,
@@ -151,8 +151,8 @@ public class CSVmorph extends MSPPerformer {
 				if (speed < 0) playIndex +=  (speed) / (tableSize / 7);
 	
 				if (loop == true) {
-					if (playIndex > end) playIndex = beginning;
-					if (playIndex < beginning) playIndex = end;
+					if (playIndex > (end - 1)) playIndex = beginning;
+					if (playIndex < (beginning - 1)) playIndex = end;
 				}
 							
 				if (loop == false) {

@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 33.0, 76.0, 1280.0, 720.0 ],
+		"rect" : [ 153.0, 80.0, 996.0, 612.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,64 +38,93 @@
 		"subpatcher_template" : "Template Max 7 toolbars hidden",
 		"boxes" : [ 			{
 				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-33",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "CSVmorph.maxpat",
-					"numinlets" : 9,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 688.0, 380.0, 486.0, 148.0 ],
-					"varname" : "CSVmorph[3]",
-					"viewvisibility" : 1
+					"id" : "obj-12",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 236.0, 91.0, 201.0, 34.0 ],
+					"style" : "",
+					"text" : "Turn on audio, since CSVmorph operates in the signal domain."
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-1",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "CSVmorph.maxpat",
-					"numinlets" : 9,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 221.0, 534.0, 486.0, 148.0 ],
-					"varname" : "CSVmorph",
-					"viewvisibility" : 1
+					"fontsize" : 16.0,
+					"id" : "obj-10",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 352.0, 13.0, 283.0, 25.0 ],
+					"style" : "",
+					"text" : "Demonstration of the CSVmorph patch"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-38",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "CSVmorph.maxpat",
-					"numinlets" : 9,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 746.0, 182.0, 486.0, 148.0 ],
-					"varname" : "CSVmorph[8]",
-					"viewvisibility" : 1
+					"id" : "obj-8",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 236.0, 478.0, 201.0, 34.0 ],
+					"style" : "",
+					"text" : "The output is a signal value in the range of 0 - 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-6",
+					"maxclass" : "number~",
+					"mode" : 2,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "float" ],
+					"patching_rect" : [ 445.0, 478.0, 56.0, 22.0 ],
+					"sig" : 0.0,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 236.0, 321.0, 201.0, 48.0 ],
+					"style" : "",
+					"text" : "A second instance of CSVmorph is getting input from the first, controlling its Low-pass filter setting."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 236.0, 160.0, 201.0, 20.0 ],
+					"style" : "",
+					"text" : "Click on CSVmorph to maximize it."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "ezdac~",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 445.0, 91.0, 45.0, 45.0 ],
+					"style" : ""
 				}
 
 			}
@@ -112,9 +141,9 @@
 					"name" : "CSVmorph.maxpat",
 					"numinlets" : 9,
 					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
+					"offset" : [ 0.0, -300.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 337.0, 20.0, 486.0, 148.0 ],
+					"patching_rect" : [ 445.0, 160.0, 84.0, 22.0 ],
 					"varname" : "CSVmorph[4]",
 					"viewvisibility" : 1
 				}
@@ -122,23 +151,12 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-2",
-					"maxclass" : "ezdac~",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 25.0, 666.0, 45.0, 45.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"id" : "obj-51",
+					"id" : "obj-13",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "CSVmorph.maxpat",
@@ -146,218 +164,8 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, -300.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1155.0, 343.0, 84.0, 22.0 ],
-					"varname" : "CSVmorph[14]",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-50",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "CSVmorph.maxpat",
-					"numinlets" : 9,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, -300.0 ],
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1064.0, 343.0, 84.0, 22.0 ],
-					"varname" : "CSVmorph[13]",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-46",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "CSVmorph.maxpat",
-					"numinlets" : 9,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, -300.0 ],
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 486.0, 230.0, 84.0, 22.0 ],
-					"varname" : "CSVmorph[10]",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-36",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "CSVmorph.maxpat",
-					"numinlets" : 9,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, -300.0 ],
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 454.0, 334.0, 84.0, 22.0 ],
-					"varname" : "CSVmorph[6]",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-35",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "CSVmorph.maxpat",
-					"numinlets" : 9,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, -300.0 ],
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 396.0, 294.0, 84.0, 22.0 ],
-					"varname" : "CSVmorph[5]",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-45",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "CSVmorph.maxpat",
-					"numinlets" : 9,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, -300.0 ],
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 396.0, 267.0, 84.0, 22.0 ],
-					"varname" : "CSVmorph[9]",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-31",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "CSVmorph.maxpat",
-					"numinlets" : 9,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, -300.0 ],
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 513.0, 371.0, 84.0, 22.0 ],
-					"varname" : "CSVmorph[1]",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-47",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "CSVmorph.maxpat",
-					"numinlets" : 9,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, -300.0 ],
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 545.0, 343.0, 84.0, 22.0 ],
-					"varname" : "CSVmorph[11]",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-48",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "CSVmorph.maxpat",
-					"numinlets" : 9,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, -300.0 ],
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 569.0, 308.0, 84.0, 22.0 ],
-					"varname" : "CSVmorph[12]",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-37",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "CSVmorph.maxpat",
-					"numinlets" : 9,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, -300.0 ],
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 571.0, 425.0, 84.0, 22.0 ],
-					"varname" : "CSVmorph[7]",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-32",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "CSVmorph.maxpat",
-					"numinlets" : 9,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, -300.0 ],
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 596.0, 463.0, 84.0, 22.0 ],
-					"varname" : "CSVmorph[2]",
+					"patching_rect" : [ 445.0, 321.0, 84.0, 22.0 ],
+					"varname" : "CSVmorph",
 					"viewvisibility" : 1
 				}
 
@@ -365,212 +173,43 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 5 ],
+					"destination" : [ "obj-6", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-31", 0 ]
+					"source" : [ "obj-13", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-37", 4 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-31", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 7 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-32", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 8 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-33", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 2 ],
+					"destination" : [ "obj-13", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-34", 0 ]
 				}
 
 			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 3 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-35", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 4 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-36", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 6 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-37", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-33", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-38", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-35", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-45", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-36", 4 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-46", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-31", 4 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-47", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-47", 3 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-48", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-33", 7 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-50", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-33", 8 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-51", 0 ]
-				}
-
-			}
  ],
 		"parameters" : 		{
-			"obj-45::obj-103" : [ "live.toggle[39]", "live.toggle", 0 ],
-			"obj-50::obj-17" : [ "live.toggle[52]", "live.toggle", 0 ],
-			"obj-1::obj-88" : [ "live.toggle[1]", "live.toggle", 0 ],
-			"obj-31::obj-97" : [ "live.toggle[5]", "live.toggle", 0 ],
-			"obj-46::obj-97" : [ "live.toggle[41]", "live.toggle", 0 ],
-			"obj-33::obj-103" : [ "live.toggle[15]", "live.toggle", 0 ],
-			"obj-47::obj-88" : [ "live.toggle[46]", "live.toggle", 0 ],
-			"obj-36::obj-103" : [ "live.toggle[27]", "live.toggle", 0 ],
-			"obj-38::obj-88" : [ "live.toggle[34]", "live.toggle", 0 ],
-			"obj-32::obj-97" : [ "live.toggle[9]", "live.toggle", 0 ],
-			"obj-34::obj-17" : [ "live.toggle[16]", "live.toggle", 0 ],
-			"obj-37::obj-103" : [ "live.toggle[31]", "live.toggle", 0 ],
-			"obj-45::obj-97" : [ "live.toggle[37]", "live.toggle", 0 ],
-			"obj-50::obj-88" : [ "live.toggle[54]", "live.toggle", 0 ],
-			"obj-1::obj-17" : [ "live.toggle[3]", "live.toggle", 0 ],
-			"obj-33::obj-17" : [ "live.toggle[12]", "live.toggle", 0 ],
-			"obj-47::obj-17" : [ "live.toggle[44]", "live.toggle", 0 ],
-			"obj-38::obj-97" : [ "live.toggle[33]", "live.toggle", 0 ],
-			"obj-31::obj-103" : [ "live.toggle[7]", "live.toggle", 0 ],
-			"obj-36::obj-88" : [ "live.toggle[26]", "live.toggle", 0 ],
-			"obj-48::obj-88" : [ "live.toggle[50]", "live.toggle", 0 ],
-			"obj-35::obj-88" : [ "live.toggle[22]", "live.toggle", 0 ],
-			"obj-51::obj-103" : [ "live.toggle[59]", "live.toggle", 0 ],
-			"obj-37::obj-97" : [ "live.toggle[29]", "live.toggle", 0 ],
-			"obj-32::obj-88" : [ "live.toggle[10]", "live.toggle", 0 ],
-			"obj-50::obj-97" : [ "live.toggle[53]", "live.toggle", 0 ],
-			"obj-46::obj-88" : [ "live.toggle[42]", "live.toggle", 0 ],
-			"obj-31::obj-17" : [ "live.toggle[4]", "live.toggle", 0 ],
-			"obj-47::obj-103" : [ "live.toggle[47]", "live.toggle", 0 ],
-			"obj-36::obj-17" : [ "live.toggle[24]", "live.toggle", 0 ],
-			"obj-38::obj-103" : [ "live.toggle[35]", "live.toggle", 0 ],
-			"obj-51::obj-17" : [ "live.toggle[56]", "live.toggle", 0 ],
-			"obj-48::obj-17" : [ "live.toggle[48]", "live.toggle", 0 ],
-			"obj-35::obj-17" : [ "live.toggle[20]", "live.toggle", 0 ],
-			"obj-34::obj-97" : [ "live.toggle[17]", "live.toggle", 0 ],
-			"obj-51::obj-97" : [ "live.toggle[57]", "live.toggle", 0 ],
-			"obj-45::obj-88" : [ "live.toggle[38]", "live.toggle", 0 ],
-			"obj-50::obj-103" : [ "live.toggle[55]", "live.toggle", 0 ],
-			"obj-1::obj-103" : [ "live.toggle[2]", "live.toggle", 0 ],
-			"obj-46::obj-17" : [ "live.toggle[40]", "live.toggle", 0 ],
-			"obj-33::obj-88" : [ "live.toggle[14]", "live.toggle", 0 ],
-			"obj-47::obj-97" : [ "live.toggle[45]", "live.toggle", 0 ],
-			"obj-38::obj-17" : [ "live.toggle[32]", "live.toggle", 0 ],
-			"obj-32::obj-17" : [ "live.toggle[8]", "live.toggle", 0 ],
-			"obj-34::obj-103" : [ "live.toggle[19]", "live.toggle", 0 ],
-			"obj-48::obj-103" : [ "live.toggle[51]", "live.toggle", 0 ],
-			"obj-35::obj-103" : [ "live.toggle[23]", "live.toggle", 0 ],
-			"obj-37::obj-88" : [ "live.toggle[30]", "live.toggle", 0 ],
-			"obj-45::obj-17" : [ "live.toggle[36]", "live.toggle", 0 ],
-			"obj-32::obj-103" : [ "live.toggle[11]", "live.toggle", 0 ],
-			"obj-1::obj-97" : [ "live.toggle", "live.toggle", 0 ],
-			"obj-33::obj-97" : [ "live.toggle[13]", "live.toggle", 0 ],
-			"obj-46::obj-103" : [ "live.toggle[43]", "live.toggle", 0 ],
-			"obj-31::obj-88" : [ "live.toggle[6]", "live.toggle", 0 ],
-			"obj-36::obj-97" : [ "live.toggle[25]", "live.toggle", 0 ],
-			"obj-48::obj-97" : [ "live.toggle[49]", "live.toggle", 0 ],
-			"obj-35::obj-97" : [ "live.toggle[21]", "live.toggle", 0 ],
 			"obj-34::obj-88" : [ "live.toggle[18]", "live.toggle", 0 ],
-			"obj-51::obj-88" : [ "live.toggle[58]", "live.toggle", 0 ],
-			"obj-37::obj-17" : [ "live.toggle[28]", "live.toggle", 0 ]
+			"obj-13::obj-88" : [ "live.toggle[1]", "live.toggle", 0 ],
+			"obj-34::obj-103" : [ "live.toggle[19]", "live.toggle", 0 ],
+			"obj-13::obj-97" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-13::obj-103" : [ "live.toggle[2]", "live.toggle", 0 ],
+			"obj-34::obj-17" : [ "live.toggle[16]", "live.toggle", 0 ],
+			"obj-34::obj-97" : [ "live.toggle[17]", "live.toggle", 0 ],
+			"obj-13::obj-17" : [ "live.toggle[3]", "live.toggle", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "CSVmorph.maxpat",
-				"bootpath" : "C:/Users/Thomas/Dropbox/Max/CSVmorph",
+				"bootpath" : "C:/Users/thoma/Dropbox/Max/CSVmorph",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CSVmorphResize.js",
-				"bootpath" : "C:/Users/Thomas/Dropbox/Max/CSVmorph",
+				"bootpath" : "C:/Users/thoma/Dropbox/Max/CSVmorph",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
