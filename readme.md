@@ -2,6 +2,7 @@
 A [Max](https://cycling74.com/products/max/) patch that is capable of reading and processing CSV files dynamically at audio signal rate. The patch is intended to contribute to a greater dynamism and complexity of sound control. A key feature is the ability to chain multiple instances of the patch together, creating complex control data.
 
 ![CSVmorph interface](http://thomasdahlandersen.net/images/CSVmorph%20interface%20v2.png)
+
 *The graphical interface as it presents in Max is shown above, with a column of values from a CSV file represented graphically.*
 
 The core code for this project is written in Java, with additional code in JavaScript. Max is hosting the Java and JavaScript code through its APIs, and is utilized primarily for its graphical interface and audio engine.
