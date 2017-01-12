@@ -1,9 +1,7 @@
 # CSVmorph
-
-This project is a [Max](https://cycling74.com/products/max/) patch reading and processing CSV files dynamically at audio signal rate. It is meant to contribute towards greater dynamism and complexity in the field of sound control.
+A [Max](https://cycling74.com/products/max/) patch that is capable of reading and processing CSV files dynamically at audio signal rate. The patch is intended to contribute to a greater dynamism and complexity of sound control. A key feature is the ability to chain multiple instances of the patch together, creating complex control data.
 
 ![CSVmorph interface](http://thomasdahlandersen.net/images/CSVmorph%20interface%20v2.png)
-
 *The graphical interface as it presents in Max is shown above, with a column of values from a CSV file represented graphically.*
 
 The core code for this project is written in Java, with additional code in JavaScript. Max is hosting the Java and JavaScript code through its APIs, and is utilized primarily for its graphical interface and audio engine.
@@ -38,7 +36,7 @@ Upon creation, the bpatcher is in its minimized state. Clicking the bpatcher wil
 
 An orange marker represents the position from which a value is being read from the data. The opaque area represents the limits of the section from which to read values. This area can be set by click-dragging the mouse pointer across the desired area. Modifier keys manipulates the edges of the selection in various ways. Holding shift, control/cmd or alt while click-dragging the opaque area modifies the individual edges, position and size of the area, respectively.
 
-Most of the controls in CSVmorph can be controlled by external input from another instance of the CSVmorph patch, or by any signal input in the range of 0 to 1.
+Most of the controls in CSVmorph can be controlled by external input from another instance of the CSVmorph patch, or by any signal input in the range between 0 - 1.
 
 ### Controls
 * Column - Choose a column from the loaded CSV file
