@@ -1,9 +1,7 @@
 # CSVmorph
 A [Max](https://cycling74.com/products/max/) patch that is capable of reading and processing CSV files dynamically at audio signal rate. The patch is intended to contribute to a greater dynamism and complexity of sound control. A key feature is the ability to chain multiple instances of the patch together, creating complex control data.
 
-<p align="center">
-    <img src="http://thomasdahlandersen.net/images/csvmorph/CSVmorph3.png" alt="CSVmorph interface"/>
-</p>
+[![CSVmorph interface](http://img.youtube.com/vi/ChBopj9Q4lQ/0.jpg)](https://youtu.be/ChBopj9Q4lQ "CSVmorph interface")
 
 *The graphical interface as it presents in Max is shown above, with a column of values from a CSV file represented graphically.*
 
